@@ -3,7 +3,7 @@ from scraping.market_scraper import obtener_productos_condis
 def generar_plan(presupuesto, filtros):
     productos_scrapeados = obtener_productos_condis()
 
-    # Convertimos precio a float
+    # parse prices into floats
     productos = []
     for p in productos_scrapeados:
         try:
